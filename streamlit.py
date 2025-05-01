@@ -2,6 +2,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from math import pi
 import streamlit as st
+import pathlib
+
+BASE_DIR = pathlib.Path().absolute()
 
 # Load datasets (now local to the repo)
 file_path_2021 = os.path.join(BASE_DIR, '2021_dataset-Table 1.xlsx')
