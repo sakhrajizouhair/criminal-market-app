@@ -3,8 +3,6 @@ import matplotlib.pyplot as plt
 from math import pi
 import streamlit as st
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
 # Load datasets (now local to the repo)
 file_path_2021 = os.path.join(BASE_DIR, '2021_dataset-Table 1.xlsx')
 file_path_2023 = os.path.join(BASE_DIR, '2023_dataset-Table 1.xlsx')
