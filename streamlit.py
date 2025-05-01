@@ -3,12 +3,15 @@ import matplotlib.pyplot as plt
 from math import pi
 import streamlit as st
 
-# Load datasets
-file_path_2021 = '/Users/rida/Downloads/2021_dataset-Table 1.xlsx'
-file_path_2023 = '/Users/rida/Downloads/2023_dataset-Table 1.xlsx'
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Load datasets (now local to the repo)
+file_path_2021 = os.path.join(BASE_DIR, '2021_dataset-Table 1.xlsx')
+file_path_2023 = os.path.join(BASE_DIR, '2023_dataset-Table 1.xlsx')
 
 data_2021 = pd.read_excel(file_path_2021)
 data_2023 = pd.read_excel(file_path_2023)
+
 
 # Streamlit user interface
 st.title("Criminal Market Analysis")
